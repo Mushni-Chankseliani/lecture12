@@ -1,0 +1,36 @@
+section {
+    padding: 100px 0;
+
+    .container {
+        max-width: $container-width;
+        width: 100%;
+        margin: auto;
+
+        & > h2 {
+            font-size: $secondary-title-size;
+            margin-bottom: 30px;
+            color: $title-color;
+        }
+
+        .box-wrapper {
+            @include flex-props(space-around, center);
+
+            & > div {
+                width: 400px;
+                height: 400px;
+            }
+
+            .left-box {
+                background-color: blue;
+            }
+            
+            .right-box {
+                background-color: yellow;
+            }
+        }
+    }
+}
+
+
+
+
